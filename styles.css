@@ -1,60 +1,109 @@
-:root {
-/* global colors */
---brivity-blue: #59C4C4;
---brivity-blue-115: #4CA7A7;
---brivity-coral: #F2714D;
---coral-grad: linear-gradient(90deg,#f2714d 0%,#af243e 100%);
---gray-75: #666;
---gray-50: #999;
---gray-10: #EBEBEB;
---tinted-gray-100: ECEFEF;
---tinted-gray-50: #F5F7F7;
---white: #FFF;
 
-/* box shaddows */
---card-shadow: 0px 2px 50px 0px rgba(150,150,150,0.34);
+
+:root {
+    /* global colors */
+    --brivity-blue: #59C4C4;
+    --brivity-blue-115: #4CA7A7;
+    --brivity-blue-20: #59C4C420;
+    --brivity-coral: #F2714D;
+    --coral-grad: linear-gradient(90deg, #f2714d 0%, #af243e 100%);
+    --blue-grad: linear-gradient(90deg, var(--brivity-blue) 0%, var(--brivity-blue-115) 100%);
+    --gray-75: #666;
+    --gray-50: #999;
+    --gray-10: #EBEBEB;
+    --tinted-gray-100: ECEFEF;
+    --tinted-gray-50: #F5F7F7;
+    --white: #FFF;
+
+    /* box shaddows */
+    --card-shadow: 0px 2px 50px 0px rgba(150, 150, 150, 0.34);
 }
 
-html, body {
-  font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
-  border-style: none;
-  scroll-behavior: smooth;
+html,
+body {
+    color: var(--gray-75);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border-style: none;
+    scroll-behavior: smooth;
 }
 
 /* Buttons */
 .button-round {
-  border-radius: 100px;
-  border-style: none;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 8.5px 25px;
-  text-transform: uppercase;
-  transition: all 0.2s ease-out;
+    border-radius: 100px;
+    border-style: none;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8.5px 25px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
 }
 
 .button-primary-1 {
-  color: var(--white);
-  background-color: var(--brivity-blue);
+    color: var(--white);
+    background-color: var(--brivity-blue);
 }
 
 .button-primary-1:hover {
-  background-color: var(--brivity-blue-115);
+    background-color: var(--brivity-blue-115);
 }
 
 .button-primary-2 {
-  background-image: var(--coral-grad);
-  color: var(--white);
+    background-image: var(--coral-grad);
+    color: var(--white);
 }
 
 .button-primary-2:hover {
-  background-image:  linear-gradient(90deg,#f2714d 0%,#af243e 50%);
+    background-image: linear-gradient(90deg, #f2714d 0%, #af243e 50%);
+
 }
 
 .button-secondary {
+    color: var(--brivity-blue);
+    background-color: transparent;
+    border: 2px solid var(--brivity-blue);
+}
+
+/*left side bars - categories and articles*/
+
+.left_sidebar_nav  li {
+padding-bottom: 2px;
+}
+
+.left_sidebar_nav  li a {
+font-size: 14px;
+}
+
+.left_sidebar_nav  li a.active{
+border-radius: 4px !important;
+background: var(--brivity-blue-20) !important;
+color: inherit !important;
+}
+
+/*right side bar - article table of contents*/
+.content_block .content_container .page-action .article_action_links ul li.selected>a {
   color: var(--brivity-blue);
-  background-color: transparent;
-  border: 2px solid var(--brivity-blue);
+  font-weight: 700;
+}
+
+.page_action {
+background-color: var(--tinted-gray-50);
+border-radius: 4px;
+}
+
+/*callouts*/
+
+.infoBox {
+  background-color: #ddf7ff;   /* Here you can change info box background color*/
+  color: #006a8a; /* Here you can change info box font color*/
+}
+.errorBox {
+  background: #f9e2e4; /* Here you can change error box background color*/
+  color: #7e1115; /* Here you can change error box font color*/
+}
+.warningBox {
+  background: #fdf2ce; /* Here you can change warning box background color*/
+  color: #7f6416; /* Here you can change warning box font color*/
 }
