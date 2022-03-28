@@ -1,0 +1,53 @@
+:root {
+/* global colors */
+--brivity-blue: #59C4C4;
+--brivity-blue-115: #4CA7A7;
+--brivity-coral: #F2714D;
+--coral-grad: linear-gradient(90deg,#f2714d 0%,#af243e 100%);
+--gray-75: #666;
+--gray-50: #999;
+--gray-10: #EBEBEB;
+--tinted-gray-100: ECEFEF;
+--tinted-gray-50: #F5F7F7;
+--white: #FFF
+
+/* box shaddows */
+--card-shadow: 0px 2px 50px 0px rgba(150,150,150,0.34);
+}
+
+html, body {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+.button-round {
+  border-radius: 100px;
+  padding: 8.5px,25px;
+  transition: all 0.2s ease-out;
+}
+
+.button-primary-1 {
+  color: white;
+  background-color: var(--brivity-blue);
+}
+
+.button-primary-1:hover {
+  background-color: var(--brivity-blue-115);
+}
+
+.button-primary-2 {
+  background-image: var(--coral-grad);
+}
+
+.button-primary-2:hover {
+  background-image: none;
+  background-color: 
+}
+
+.button-secondary {
+  color: var(--brivity-blue);
+  background-color: transparent;
+  border: 2px solid var(--brivity-blue);
+}
