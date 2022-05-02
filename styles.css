@@ -1,5 +1,3 @@
-
-
 :root {
     /* global colors */
     --brivity-blue: #59C4C4;
@@ -26,9 +24,34 @@ body {
     font-family: 'Open Sans', sans-serif;
     border-style: none;
     scroll-behavior: smooth;
+    letter-spacing: 0 !important;
 }
 
-/* Buttons */
+/*----------------------------------------------- Buttons */
+
+/* Nav bar button */
+
+header .header_top .header_top_nav ul li a.action-item {
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8.5px 25px;
+}
+
+a.action-item {
+    border-style: none;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8.5px 25px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+/* general button */
+
 .button-round {
     border-radius: 100px;
     border-style: none;
@@ -66,44 +89,81 @@ body {
     border: 2px solid var(--brivity-blue);
 }
 
+
+/*links*/
+a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brivity-blue-115);
+    text-decoration: underline;
+}
+
+.content_block .content_container .content_block_text {
+    letter-spacing: 0 !important;
+}
+
+
 /*left side bars - categories and articles*/
 
-.left_sidebar_nav  li {
-padding-bottom: 2px;
+.left_sidebar_nav {}
+
+.left_sidebar_nav li {
+    padding-bottom: 2px;
 }
 
-.left_sidebar_nav  li a {
-font-size: 14px;
+.left_sidebar_nav li a {
+    font-size: 14px;
 }
 
-.left_sidebar_nav  li a.active{
-border-radius: 4px !important;
-background: var(--brivity-blue-20) !important;
-color: inherit !important;
+.left_sidebar_nav li a.active {
+    border-radius: 4px !important;
+    background: var(--brivity-blue-20) !important;
+    color: #333 !important;
 }
 
 /*right side bar - article table of contents*/
 .content_block .content_container .page-action .article_action_links ul li.selected>a {
-  color: var(--brivity-blue);
-  font-weight: 700;
+    color: var(--brivity-blue);
+    font-weight: 700;
 }
 
 .page_action {
-background-color: var(--tinted-gray-50);
-border-radius: 4px;
+    background-color: var(--tinted-gray-50);
+    border-radius: 4px;
 }
 
 /*callouts*/
 
 .infoBox {
-  background-color: #ddf7ff;   /* Here you can change info box background color*/
-  color: #006a8a; /* Here you can change info box font color*/
+    background-color: #ddf7ff;
+    /* Here you can change info box background color*/
+    color: #006a8a;
+    /* Here you can change info box font color*/
 }
+
 .errorBox {
-  background: #f9e2e4; /* Here you can change error box background color*/
-  color: #7e1115; /* Here you can change error box font color*/
+    background: #f9e2e4;
+    /* Here you can change error box background color*/
+    color: #7e1115;
+    /* Here you can change error box font color*/
 }
+
 .warningBox {
-  background: #fdf2ce; /* Here you can change warning box background color*/
-  color: #7f6416; /* Here you can change warning box font color*/
+    background: #fdf2ce;
+    /* Here you can change warning box background color*/
+    color: #7f6416;
+    /* Here you can change warning box font color*/
+}
+
+.watermark_logo {
+    height: 0px;
+    display: none !important;
+}
+
+.watermark_logo a {
+    height: 0px;
+    display: none !important;
 }
