@@ -96,6 +96,11 @@ header .header_top .header_top_nav ul li a:hover {
     transition: all 0.2s ease-out;
 }
 
+.button-round-small {
+    font-size: .95rem;
+    padding: 0 25px;
+}
+
 .button-round a {
     color: inherit;
 }
@@ -119,6 +124,11 @@ header .header_top .header_top_nav ul li a:hover {
 
 }
 
+.button-primary-2 a:hover {
+    color: white;
+
+}
+
 .button-secondary {
     color: var(--brivity-blue);
     background-color: transparent;
@@ -131,13 +141,29 @@ header .header_top .header_top_nav ul li a:hover {
     border: 2px solid var(--brivity-blue-115);
 }
 
+.button-text {
+    font-family: inherit;
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+
 .button-group-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-/*---------------------------------Card Styles*/
+.button-container {
+	display: flex;
+  	justify-content: center;
+}
+
+/*---------------------------------Home Page Card Styles*/
 
 .card-group {
     display: flex;
@@ -194,14 +220,13 @@ header .header_top .header_top_nav ul li a:hover {
 }
 
 
-.button-container-right {
-    display: flex;
-    justify-content: center;
-}
-
-/*---------------------------------Section Styles*/
+/*---------------------------------------------------Home Page Section Styles*/
 .landing_top {
     padding: 100px 0 !important;
+}
+
+.landing_home {
+    letter-spacing: 0;
 }
 
 .landing-category-section {
@@ -280,21 +305,21 @@ header .header_top .header_top_nav ul li a:hover {
 
 /*--------------------------widget-block-------*/
 
-.landing_widget{
-	background-color: white;
+.landing_widget {
+    background-color: white;
 }
 
-.landing_widget .widget_block h3{
-	color: var(--gray-75);
+.landing_widget .widget_block h3 {
+    color: var(--gray-75);
 }
 
 /*--------------------------2-col with image section-------*/
 .landing_2col {
     display: flex;
     flex-wrap: wrap;
-  	align-items: center;
+    align-items: center;
     gap: 30px;
-  	padding: 40px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .container .landing_2col {
@@ -305,7 +330,7 @@ header .header_top .header_top_nav ul li a:hover {
 
 .landing_2col .col2_block {
     max-width: 45%;
-  	min-width: 250px;
+    min-width: 250px;
 }
 
 .landing_2col .col2_block a {
@@ -326,13 +351,9 @@ header .header_top .header_top_nav ul li a:hover {
     margin-top: 24px;
 }
 
-/*---------------------------------*/
-.landing_home {
-    letter-spacing: 0;
-}
 
 
-/*------------------------------------------------------------Article Styles*/
+/*--------------------------------------------------------------------------------Article Styles*/
 
 /*links*/
 a {
@@ -541,11 +562,27 @@ hr {
     display: none;
 }
 
-/*---------------------------------------article content special*/
+/*---------------------------------------article content cards*/
 
 .course-card {
-    border: solid var(--gray-10) 1.5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    /*border: solid var(--gray-10) 1.5px;*/
     border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 8px;
+    margin: 50px 0;
+
+}
+
+.course-card-content {
+    flex: 1 2 400px;
+}
+
+.course-card-content h2 {
+    line-height: 2.2rem;
+}
+
+.course-card-content p {
+    font-size: 15px;
+    line-height: 1.7rem;
 }
